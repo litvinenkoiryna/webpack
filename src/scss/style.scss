@@ -1,17 +1,1 @@
-$body-color: green;
-$text-color: purple;
-$color-def: red;
-
-body {
-  color: $body-color;
-}
-.my{
-  &__title{
-    color:$color-def;
-    font-size: 3em;
-  }
-  &__text{
-    color: $text-color;
-    font-size: 1.5em;
-  }
-}
+@import "main";
