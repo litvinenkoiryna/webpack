@@ -1,6 +1,6 @@
 // const path = require('path');
 // const MiniCss = require("mini-css-extract-plugin");
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 
@@ -26,6 +26,11 @@ module.exports = {
     plugins: [
         new miniCss({
             filename: 'style.css',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Webpack Boilerplate',
+            template: path.resolve(__dirname, './src/template.html'),
+            filename: "index.html",
         }),
     ]
 };

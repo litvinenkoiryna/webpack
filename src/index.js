@@ -1,5 +1,5 @@
 
- import './scss/style.scss';
+import './scss/style.scss';
 
 const heading = document.createElement('h1');
 heading.textContent = 'It is interesting!';
